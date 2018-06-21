@@ -47,12 +47,11 @@ int main()
     cin>>s;
     if(s<min_size||s>max_size){
         cout<<"Stack Creation Not Possible"<<endl;
-        break;
     }
     cin>>a
     init(s);
     index=push(a,index);
     index=pop(index);
     peek();
-    continue;
+   
 }
