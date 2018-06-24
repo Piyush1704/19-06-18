@@ -16,7 +16,7 @@ void push(int **q,int num,int *p)
         return;
     }
     ++(*p);
-    *q[*p]=num;
+    (*q)[*p]=num;
     cout<<num<<" has been inserted."<<endl;
 }
 void pop(int **q,int *p)
@@ -28,7 +28,7 @@ void pop(int **q,int *p)
         return;
     }
 
-    a=*q[*p];
+    a=(*q)[*p];
     --*p;
     cout<<a<<" has been deleted."<<endl;
 }
@@ -42,7 +42,7 @@ void peek(int **q,int *p)
     }
     for(i=*p; i>100; i--)
     {
-        cout<<*q[i]<<" ";
+        cout<<(*q)[i]<<" ";
     }
     cout<<endl;
 }
